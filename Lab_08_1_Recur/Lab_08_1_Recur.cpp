@@ -6,7 +6,7 @@ char* Change(char* dest, const char* str, char* t, int i)
 {
 	if (str[i + 2] != 0)
 	{
-		if ((str[i] && str[i + 2] == 'O' || str[i] && str[i + 2] == 'A') && str[i + 1] == 'G')
+		if (((str[i] == 'O' && str[i + 2] == 'O') || (str[i] == 'A' && str[i + 2] == 'A')) && str[i + 1] == 'G')
 		{
 			strcat(t, "**");
 			return Change(dest, str, t + 2, i + 3);
