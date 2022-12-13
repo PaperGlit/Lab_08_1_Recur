@@ -3,7 +3,7 @@ using namespace std;
 
 char* Change(char* dest, const char* str, char* t, int i, int k)
 {
-	if (str[i + 2] != 0)
+	if (i < strlen(str) && str[i + 2] != 0)
 	{
 		if (((str[i] == 'O' && str[i + 2] == 'O') || (str[i] == 'A' && str[i + 2] == 'A')) && str[i + 1] == 'G')
 		{
