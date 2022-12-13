@@ -41,7 +41,7 @@ namespace UnitTestLab081Recur
 			char teststr[101] = "TESTOGOTESTAGA";
 			char* dest1 = new char[151];
 			dest1[0] = '\0';
-			char* dest = Change(dest1, str, dest1, 0);
+			char* dest = Change(dest1, str, dest1, 0, 0);
 			char* testdest = TestChange(dest1, teststr, dest1, 0);
 			Assert::AreEqual(strcmp(dest, testdest), 0);
 		}
